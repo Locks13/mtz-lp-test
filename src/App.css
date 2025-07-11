@@ -1,0 +1,61 @@
+:root {
+  --font-family: 'Galaxie Copernicus', 'Arial', sans-serif;
+
+  --typo-fs-h1: 80px;
+  --typo-fs-h3: 46px;
+  --typo-fs-h7: 22px;
+
+  --typo-fs-m: 16px;
+
+
+  --white: #ffffff;
+  --black: #000000;
+  
+  --dark-teal:#00363A;
+  --dark-gray: #5F6E82;
+
+  --spacing-7: 32px;
+
+}
+
+  /* Estilos globais */
+body {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  line-height: 1.6;
+  color: #333;
+}
+
+.app {
+  margin: 0 auto;
+}
+
+section {
+  margin: 40px 0;
+  padding: 20px 0;
+}
+
+.btn {
+  cursor: pointer;
+  text-decoration: none;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+.btn.disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+/* Layout responsivo básico */
+@media (max-width: 768px) {
+  .two-column-section {
+    flex-direction: column;
+  }
+  
+  .column {
+    width: 100% !important;
+  }
+}

@@ -1,0 +1,56 @@
+[
+    {
+      "id": 1,
+      "title": "Dicas para criar o nome ideal",
+      "subtitle": "Quando se trata de escolher o nome perfeito para sua empresa, algumas estratégias podem fazer toda a diferença. Descubra as melhores dicas:",
+      "tips": [
+        {
+          "id": 101,
+          "title": "Público-alvo e Segmento de Mercado",
+          "description": "Definir seu público-alvo e compreender o segmento de mercado é crucial para escolher um nome relevante. Um nome que ressoa com seu público tem maior probabilidade de criar conexão e identificação",
+          "icon": "🎯",
+          "items": [],
+          "actionText": "Get Started",
+          "highlight": false
+        },
+        {
+          "id": 102,
+          "title": "Simplicidade e Atemporalidade",
+          "description": "Opte por nomes curtos e simples que sejam fáceis de lembrar e pronunciar. Além disso, busque por nomes atemporais que se mantenham relevantes ao longo do tempo, evitando tendências passageiras.",
+          "icon": "👌",
+          "items": [],
+          "actionText": "Upgrade Now",
+          "highlight": false
+        },
+        {
+          "id": 103,
+          "title": "Disponibilidade para Registro:",
+          "description": "Verificar a disponibilidade do nome para registro de domínio e marca é essencial. Garanta que o nome escolhido esteja disponível para registro legal, evitando possíveis problemas legais no futuro.",
+          "icon": "✅",
+          "items": [],
+          "actionText": "Upgrade Now",
+          "highlight": false
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "title": "Specialized Techniques",
+      "subtitle": "Niche-specific recommendations",
+      "tips": [
+        {
+          "id": 201,
+          "title": "Creative Process",
+          "description": "Tips for creative professionals",
+          "icon": "🎨",
+          "items": [
+            "Embrace creative blocks",
+            "Seek diverse inspiration",
+            "Prototype quickly"
+          ],
+          "actionText": "Explore More",
+          "highlight": false
+        }
+      ]
+    }
+  ]

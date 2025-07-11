@@ -1,0 +1,15 @@
+{
+    "sectionTitle": "What Our Clients Say",
+    "testimonials": [
+      {
+        "id": 1,
+        "name": "John Smith",
+        "role": "Marketing Director",
+        "company": "ABC Company",
+        "comment": "The service was excellent and exceeded our expectations.",
+        "rating": 5,
+        "imageUrl": "/images/clients/john.jpg"
+      }
+    ],
+    "ctaText": "Leave your testimonial"
+  }

@@ -1,0 +1,125 @@
+/* Base styles */
+.tip-box-section {
+  padding: 60px 20px;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.tip-box-header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.tip-box-header h3 {
+  font-size: var(--typo-fs-h3);
+  color: var(--dark-teal);
+  margin-bottom: 15px;
+}
+
+.tip-box-header .subtitle {
+  font-size: var(--typo-fs-h7);
+  color: var(--dark-gray);
+  max-width: 880px;
+  margin: 0 auto;
+}
+
+/* Tips container */
+.tip-box-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+  justify-content: center;
+  max-width: 970px;
+  margin: 0 auto;
+}
+
+/* Individual tip box */
+.tip-box {
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+  transition: all 0.3s ease;
+  border: 1px solid #eee;
+  display: flex;
+  flex-direction: column;
+}
+
+.tip-box.highlight {
+  border-top: 4px solid #4CAF50;
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+.tip-box-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.tip-icon {
+  font-size: 2rem;
+  margin-bottom: 15px;
+}
+
+.tip-box h6 {
+  font-size: var(--typo-fs-h7);
+  margin: 10px 0;
+  color: var(--dark-gray);
+}
+
+.tip-description {
+  color: #7f8c8d;
+  margin-bottom: 20px;
+  line-height: 1.5;
+}
+
+.tip-items {
+  margin: 20px 0;
+  padding-left: 20px;
+  flex: 1;
+}
+
+
+.tip-action.highlight-action {
+  background-color: #388E3C;
+}
+
+.tip-action:hover {
+  background-color: #45a049;
+}
+
+/* Error message */
+.tip-group-error {
+  padding: 40px;
+  text-align: center;
+  background-color: #f8f9fa;
+  border-radius: 8px;
+  margin: 20px 0;
+}
+
+.tip-group-error p {
+  color: #dc3545;
+  font-size: 1.1rem;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .tip-box-section {
+    padding: 40px 15px;
+  }
+  
+  .tip-box-container {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  }
+}
+
+@media (max-width: 480px) {
+  .tip-box-header h2 {
+    font-size: 1.6rem;
+  }
+  
+  .tip-box {
+    padding: 25px;
+  }
+}

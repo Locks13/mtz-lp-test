@@ -1,0 +1,23 @@
+[
+    {
+      "id": 1,
+      "imageRight": true,
+      "title": "Quer saber como nosso Agente funciona?",
+      "content": "Se você está começando um novo negócio ou precisa de um nome marcante para a sua marca, nosso gerador de nomes para empresas é perfeito para você.",
+      "bullets": [
+        "É gratís",
+        "Rápida",
+        "Inteligente"
+      ],
+      "ctaText": "Criar agora",
+      "imageUrl": "/images/chatbot-image.png"
+    },
+    {
+      "id": 2,
+      "imageRight": false,
+      "title": "Benefícios do gerador de nomes",
+      "content": "**Personalização para o Seu Negócio:** O gerador de nomes oferece sugestões personalizadas, adaptadas ao segmento e às palavras-chave do seu negócio. Isso garante nomes mais alinhados com a identidade da sua empresa.",
+      "ctaText": "Criar agora",
+      "imageUrl": "/images/magic-wand.png"
+    }
+  ]
