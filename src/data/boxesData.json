@@ -1,0 +1,38 @@
+{
+  "diferenciais": [
+    {
+      "id": 1,
+      "imageUrl": "/images/icon-blog.svg",
+      "title": "Análise Completa",
+      "description": "Conteúdo de valor, em diferentes formatos, para apoiar o crescimento do seu negócio.",
+      "linkText": "Conheça",
+      "linkUrl": "/teste"
+    },
+    {
+      "id": 2,
+      "imageUrl": "/images/icon-youtube.svg",
+      "title": "Soluções Personalizadas",
+      "description": "Bate-papos, mentorias gravadas e insights que ajudam a impulsionar suas vendas.",
+      "linkText": "Conheça",
+      "linkUrl": "/teste"
+    }
+  ],
+  "servicos": [
+    {
+      "id": 3,
+      "imageUrl": "/images/icon-blog.svg",
+      "title": "Análise Completa",
+      "description": "Conteúdo de valor, em diferentes formatos, para apoiar o crescimento do seu negócio.",
+      "linkText": "Conheça nossa metodologia",
+      "linkUrl": "/metodologia"
+    },
+    {
+      "id": 4,
+      "imageUrl": "/images/icon-youtube.svg",
+      "title": "Soluções Personalizadas",
+      "description": "Bate-papos, mentorias gravadas e insights que ajudam a impulsionar suas vendas.",
+      "linkText": "Veja nossos cases",
+      "linkUrl": "/cases"
+    }
+  ]
+}

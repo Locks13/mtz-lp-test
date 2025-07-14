@@ -1,0 +1,169 @@
+/* Container principal */
+.compact-carousel-container {
+  max-width: 1200px;
+  margin: 30px auto;
+  padding: 0 20px;
+  position: relative;
+}
+
+.carousel-title {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #2c3e50;
+  font-size: 1.5rem;
+}
+
+/* Wrapper do carrossel */
+.carousel-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+/* Carrossel horizontal */
+.compact-carousel {
+  display: flex;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  gap: 15px;
+  padding: 10px 0;
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* IE/Edge */
+  flex: 1;
+}
+
+.compact-carousel::-webkit-scrollbar {
+  display: none; /* Chrome/Safari */
+}
+
+/* Itens do carrossel */
+.compact-item {
+  scroll-snap-align: start;
+  flex: 0 0 auto;
+  width: 120px;
+  background: white;
+  border-radius: 8px;
+}
+
+/* Contêiner da imagem */
+.compact-image-container {
+  height: 98px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f8f9fa;
+  border-bottom: 1px solid #eee;
+}
+
+.compact-image-container img {
+  max-height: 98px;
+  max-width: 90%;
+  width: auto;
+  object-fit: contain;
+}
+
+/* Conteúdo de texto */
+.compact-text-content {
+  padding: 8px;
+  text-align: center;
+}
+
+.compact-text-content h3 {
+  margin: 0;
+  font-size: 0.8rem;
+  color: #333;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.compact-text-content p {
+  margin: 3px 0 0;
+  font-size: 0.7rem;
+  color: #666;
+  line-height: 1.3;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+/* Botões de navegação */
+.nav-button {
+  background: white;
+  border: none;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  font-size: 1rem;
+  cursor: pointer;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  z-index: 2;
+}
+
+.nav-button:hover {
+  background: #4CAF50;
+  color: white;
+  transform: scale(1.1);
+}
+
+.nav-button.left {
+  margin-right: -18px;
+}
+
+.nav-button.right {
+  margin-left: -18px;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .compact-item {
+    width: 110px;
+  }
+  
+  .compact-image-container {
+    height: 90px;
+  }
+  
+  .compact-image-container img {
+    max-height: 90px;
+  }
+  
+  .nav-button {
+    width: 32px;
+    height: 32px;
+  }
+}
+
+@media (max-width: 480px) {
+  .compact-carousel-container {
+    padding: 0 10px;
+  }
+  
+  .compact-item {
+    width: 100px;
+  }
+  
+  .compact-text-content h3 {
+    font-size: 0.75rem;
+  }
+  
+  .compact-text-content p {
+    font-size: 0.65rem;
+  }
+  
+  .nav-button {
+    display: none; /* Oculta botões em mobile */
+  }
+  
+  .compact-carousel {
+    gap: 10px;
+    padding: 5px 0;
+    overflow-x: scroll; /* Permite scroll manual em mobile */
+  }
+}

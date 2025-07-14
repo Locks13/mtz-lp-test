@@ -1,0 +1,108 @@
+.banner-hero {
+    background: radial-gradient(50.27% 50.07% at 68.07% 0%, rgba(124, 232, 176, 0.00) 0%, rgba(124, 232, 176, 0.20) 100%), radial-gradient(56.46% 71.32% at 31.42% 93.33%, #7CE8B0 0%, rgba(124, 232, 176, 0.00) 100%), radial-gradient(128.07% 98.64% at 21.3% 23.78%, #198CE8 11.5%, rgba(85, 220, 230, 0.00) 100%), linear-gradient(0deg, #55DCE6 0%, #55DCE6 100%), #FFF;
+    margin: 0;
+}
+.banner-content {
+    max-width: 1440px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 10vh;
+}
+.banner-content h1 {
+    color: var(--white);
+    line-height: 1.2;
+    margin-bottom: 20px;
+    font-size: var(--typo-fs-h1);
+}
+.chatbot-area{
+    max-width: 830px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.chatbot-icon{
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    font-weight: 800;
+    color: var(--dark-teal);
+}
+.chatbot-text p{
+    text-align: left;
+    color: var(--dark-gray);
+    background-color: var(--white);
+    font-size: var(--typo-fs-h7);
+    padding: 10px 15px;
+    border-radius: 20px;
+    max-width: 690px;
+}
+.chatbot-form{
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    margin-top: 20px;
+}
+.chatbot-form input {
+    width: 100%;
+    max-width: 630px;
+    padding: 10px;
+    border-radius: 20px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+    margin: 0 10px 0 0;
+    font-size: var(--typo-fs-m);
+}
+.chatbot-form button {
+    padding: 10px 20px;
+    background-color: var(--dark-teal);
+    color: var(--white);
+    border: none;
+    border-radius: 45px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    max-width: 192px;
+    width: 100%;
+    height: 54px;
+    justify-content: center;
+}
+.button-text {
+  display: block;
+}
+
+.button-icon {
+  display: none;
+}
+@media screen and (max-width: 768px) {
+    .banner-content h1 {
+        font-size: 3rem;
+    }
+    .chatbot-area {
+        width: 100%;
+    }
+    .chatbot-form input {
+        max-width: 100%;
+    }
+    .button-text {
+        display: none;
+    }
+    
+    .button-icon {
+        display: block;
+        font-size: 1.2rem;
+    }
+    .chatbot-form {
+        position: relative;
+    }    
+    .chatbot-form button{
+        position: absolute;
+        top: 0;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+    }
+    
+}

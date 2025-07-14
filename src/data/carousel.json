@@ -1,0 +1,26 @@
+[
+  {
+    "id": 1,
+    "title": "Benefícios do gerador de nomes",
+    "content": "**Personalização para o Seu Negócio:** O gerador de nomes oferece sugestões personalizadas, adaptadas ao segmento e às palavras-chave do seu negócio. Isso garante nomes mais alinhados com a identidade da sua empresa.",
+    "imageUrl": "/images/carousel/carousel-img.png",
+    "ctaText": "View Projects",
+    "ctaLink": "/services/web-development"
+  },
+  {
+    "id": 2,
+    "title": "2 Benefícios do gerador de nomes",
+    "content": "Lorem **ipsum dolor sit amet**. Sit numquam nobis sit modi possimus aut amet excepturi ab autem architecto in architecto fugit. Aut enim rerum ad enim illo sed quidem rerum.",
+    "imageUrl": "/images/carousel/carousel-img.png",
+    "ctaText": "Learn More",
+    "ctaLink": "/services/mobile-development"
+  },
+  {
+    "id": 3,
+    "title": "3 Benefícios do gerador de nomes",
+    "content": "Lorem **ipsum dolor sit amet**. Sit numquam nobis sit modi possimus aut amet excepturi ab autem architecto in architecto fugit. Aut enim rerum ad enim illo sed quidem rerum.",
+    "imageUrl": "/images/carousel/carousel-img.png",
+    "ctaText": "See Portfolio",
+    "ctaLink": "/services/design"
+  }
+]

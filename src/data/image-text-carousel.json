@@ -1,0 +1,62 @@
+[
+    {
+      "id": 1,
+      "imageUrl": "/images/image-carousel/img-1.svg",
+      "text": "Moda feminina",
+      "description": ""
+    },
+    {
+      "id": 2,
+      "imageUrl": "/images/image-carousel/img-2.svg",
+      "text": "Roupas",
+      "description": ""
+    },
+    {
+      "id": 3,
+      "imageUrl": "/images/image-carousel/img-3.svg",
+      "text": "Acessórios",
+      "description": ""
+    },
+    {
+      "id": 4,
+      "imageUrl": "/images/image-carousel/img-4.svg",
+      "text": "Maquiagem",
+      "description": ""
+    },
+    {
+      "id": 5,
+      "imageUrl": "/images/image-carousel/img-5.svg",
+      "text": "Variedades",
+      "description": ""
+    },
+    {
+      "id": 6,
+      "imageUrl": "/images/image-carousel/img-6.svg",
+      "text": "Celular",
+      "description": ""
+    },
+    {
+      "id": 7,
+      "imageUrl": "/images/image-carousel/img-7.svg",
+      "text": "Perfumes",
+      "description": ""
+    },
+    {
+      "id": 8,
+      "imageUrl": "/images/image-carousel/img-8.svg",
+      "text": "Brinquedos",
+      "description": ""
+    },
+    {
+      "id": 9,
+      "imageUrl": "/images/image-carousel/img-1.svg",
+      "text": "Moda feminina",
+      "description": ""
+    },
+    {
+      "id": 10,
+      "imageUrl": "/images/image-carousel/img-2.svg",
+      "text": "Roupas",
+      "description": ""
+    }
+  ]

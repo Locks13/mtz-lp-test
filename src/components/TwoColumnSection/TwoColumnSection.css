@@ -1,0 +1,120 @@
+.two-column-section {
+    display: flex;
+    gap: 40px;
+    align-items: center;
+    padding: 60px 0;
+    margin: 0 auto;
+    max-width: 1440px;
+  }
+  
+
+  .two-column-section .column {
+    flex: 1;
+    min-width: 0;
+  }
+  
+  .two-column-section .text-column {
+    margin: 20px;
+  }
+  
+  .two-column-section .text-column h3 {
+    font-size: var(--typo-fs-h3);
+    color: var(--dark-teal);
+    line-height: 1.2;
+    margin-bottom: 20px;
+  }
+  
+  .two-column-section .text-column p {
+    font-size: var(--typo-fs-m);
+    line-height: 1.6;
+    color: var(dark-gray);
+    margin: var(--spacing-7) 0;
+    max-width: 400px;
+  }
+
+  .two-column-section .bullet-points {
+    display: flex;
+    flex-direction: row;
+    padding-left: 0;
+    margin: var(--spacing-7) 0;
+  }
+
+  .two-column-section .bullet-points span{
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    margin-right: 10px;
+  }
+  .two-column-section .bullet-points img{
+    padding-right: 5px;
+  }
+
+  .two-column-section .text-column .btn {
+    background-color: var(--dark-teal);
+    color: var(--white);
+    padding: 12px 25px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .two-column-section .text-column .btn:hover {
+    background-color: #0052a3;
+  }
+  
+  .two-column-section .image-column img {
+    width: 100%;
+    height: auto;
+  }
+
+  .two-column-section.image-right {
+    flex-direction: row;
+  }
+  .two-column-section.image-left {
+    flex-direction: row-reverse;
+  }
+
+  .color-background{
+    background: #58E2E0;
+    background: linear-gradient(222deg,rgba(88, 226, 224, 1) 0%, rgba(87, 199, 133, 1) 26%, rgba(254, 232, 171, 1) 73%);
+    border-radius: 30px;
+    padding: 65px;
+
+  }
+  
+  @media (max-width: 768px) {
+    .two-column-section {
+      flex-direction: column;
+      gap: 30px;
+      padding: 40px 20px;
+    }
+  
+    .two-column-section.image-right {
+      flex-direction: column;
+    }
+  
+    .two-column-section .column {
+      width: 100%;
+    }
+  
+    .two-column-section .text-column {
+      padding: 0;
+    }
+  
+    .two-column-section .text-column h2 {
+      font-size: 1.5rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .two-column-section {
+      gap: 20px;
+      padding: 30px 15px;
+    }
+  
+    .two-column-section .text-column h2 {
+      font-size: 1.3rem;
+    }
+  
+    .two-column-section .text-column p {
+      font-size: 1rem;
+    }
+  }
