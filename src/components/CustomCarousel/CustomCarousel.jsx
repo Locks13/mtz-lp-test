@@ -1,52 +1,84 @@
 import React, { useState } from 'react';
+import PropTypes from 'prop-types';
 import carouselData from '../../data/carousel.json';
 import './CustomCarousel.css';
 
-const CustomCarousel = () => {
+const CustomCarousel = ({ autoPlay = true, interval = 5000 }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
 
-  const nextItem = () => {
-    setCurrentIndex((prev) => (prev === carouselData.length - 1 ? 0 : prev + 1));
+  // Proximo slide
+  const nextSlide = () => {
+    setCurrentIndex(prev => (prev === carouselData.length - 1 ? 0 : prev + 1));
   };
 
-  const prevItem = () => {
-    setCurrentIndex((prev) => (prev === 0 ? carouselData.length - 1 : prev - 1));
+  // Anterior slide
+  const prevSlide = () => {
+    setCurrentIndex(prev => (prev === 0 ? carouselData.length - 1 : prev - 1));
   };
+
+
+  // Bold markup
+  const parseContent = (content) => {
+    const parts = content.split(/\*\*(.*?)\*\*/g);
+    return parts.map((part, index) => 
+      index % 2 === 1 ? <strong key={index}>{part}</strong> : part
+    );
+  };
+
+  const currentItem = carouselData[currentIndex];
 
   return (
-    <section className="custom-carousel">
-      <div className="carousel-content">
-        <div className="text-column">
-          <h2>{carouselData[currentIndex].title}</h2>
-          <p>{carouselData[currentIndex].content}</p>
+    <section className="carousel" aria-label="Content carousel">
+      <div className="carousel-container">
+        <div className="carousel-content">
+          <h3>{currentItem.title}</h3>
+          <p>{parseContent(currentItem.content)}</p>
           
+          {currentItem.ctaText && (
+            <a href={currentItem.ctaLink} className="carousel-cta">
+              {currentItem.ctaText}
+            </a>
+          )}
+
+          {/* Contro de navegação */}
           <div className="carousel-controls">
             <button 
-              onClick={prevItem} 
-              disabled={currentIndex === 0}
-              aria-label="Previous item"
+              onClick={prevSlide}
+              className="carousel-button prev"
+              aria-label="Previous slide"
             >
-              ←
+              <svg xmlns="http://www.w3.org/2000/svg" width="58" height="58" viewBox="0 0 58 58" fill="none">
+                <path d="M29 5.4375C24.3398 5.4375 19.7842 6.81942 15.9094 9.4085C12.0346 11.9976 9.01449 15.6775 7.2311 19.983C5.44771 24.2885 4.98109 29.0261 5.89026 33.5968C6.79942 38.1675 9.04353 42.3659 12.3388 45.6612C15.6341 48.9565 19.8325 51.2006 24.4032 52.1098C28.9739 53.0189 33.7115 52.5523 38.017 50.7689C42.3225 48.9855 46.0024 45.9655 48.5915 42.0906C51.1806 38.2158 52.5625 33.6602 52.5625 29C52.5559 22.7529 50.0713 16.7635 45.6539 12.3461C41.2365 7.92869 35.2471 5.4441 29 5.4375ZM29 48.9375C25.0567 48.9375 21.202 47.7682 17.9233 45.5774C14.6446 43.3867 12.0892 40.2729 10.5802 36.6298C9.07114 32.9867 8.67631 28.9779 9.4456 25.1104C10.2149 21.2429 12.1138 17.6904 14.9021 14.9021C17.6904 12.1137 21.2429 10.2149 25.1104 9.44559C28.9779 8.6763 32.9867 9.07113 36.6298 10.5802C40.2729 12.0892 43.3867 14.6446 45.5774 17.9233C47.7682 21.202 48.9375 25.0567 48.9375 29C48.9315 34.2859 46.829 39.3536 43.0913 43.0913C39.3536 46.829 34.2859 48.9315 29 48.9375ZM39.3449 27.7177C39.5134 27.886 39.6471 28.0859 39.7383 28.3059C39.8295 28.526 39.8764 28.7618 39.8764 29C39.8764 29.2382 39.8295 29.474 39.7383 29.6941C39.6471 29.9141 39.5134 30.114 39.3449 30.2823L32.0949 37.5323C31.7548 37.8724 31.2935 38.0635 30.8125 38.0635C30.3315 38.0635 29.8703 37.8724 29.5302 37.5323C29.1901 37.1922 28.999 36.731 28.999 36.25C28.999 35.769 29.1901 35.3078 29.5302 34.9677L33.6876 30.8125H19.9375C19.4568 30.8125 18.9958 30.6215 18.6559 30.2816C18.316 29.9417 18.125 29.4807 18.125 29C18.125 28.5193 18.316 28.0583 18.6559 27.7184C18.9958 27.3785 19.4568 27.1875 19.9375 27.1875H33.6876L29.5302 23.0323C29.1901 22.6922 28.999 22.231 28.999 21.75C28.999 21.269 29.1901 20.8078 29.5302 20.4677C29.8703 20.1276 30.3315 19.9365 30.8125 19.9365C31.2935 19.9365 31.7548 20.1276 32.0949 20.4677L39.3449 27.7177Z" fill="#00363A"/>
+              </svg>
             </button>
+            
             <button 
-              onClick={nextItem} 
-              disabled={currentIndex === carouselData.length - 1}
-              aria-label="Next item"
+              onClick={nextSlide}
+              className="carousel-button next"
+              aria-label="Next slide"
             >
-              →
+              <svg xmlns="http://www.w3.org/2000/svg" width="58" height="58" viewBox="0 0 58 58" fill="none">
+                <path d="M29 5.4375C24.3398 5.4375 19.7842 6.81942 15.9094 9.4085C12.0346 11.9976 9.01449 15.6775 7.2311 19.983C5.44771 24.2885 4.98109 29.0261 5.89026 33.5968C6.79942 38.1675 9.04353 42.3659 12.3388 45.6612C15.6341 48.9565 19.8325 51.2006 24.4032 52.1098C28.9739 53.0189 33.7115 52.5523 38.017 50.7689C42.3225 48.9855 46.0024 45.9655 48.5915 42.0906C51.1806 38.2158 52.5625 33.6602 52.5625 29C52.5559 22.7529 50.0713 16.7635 45.6539 12.3461C41.2365 7.92869 35.2471 5.4441 29 5.4375ZM29 48.9375C25.0567 48.9375 21.202 47.7682 17.9233 45.5774C14.6446 43.3867 12.0892 40.2729 10.5802 36.6298C9.07114 32.9867 8.67631 28.9779 9.4456 25.1104C10.2149 21.2429 12.1138 17.6904 14.9021 14.9021C17.6904 12.1137 21.2429 10.2149 25.1104 9.44559C28.9779 8.6763 32.9867 9.07113 36.6298 10.5802C40.2729 12.0892 43.3867 14.6446 45.5774 17.9233C47.7682 21.202 48.9375 25.0567 48.9375 29C48.9315 34.2859 46.829 39.3536 43.0913 43.0913C39.3536 46.829 34.2859 48.9315 29 48.9375ZM39.3449 27.7177C39.5134 27.886 39.6471 28.0859 39.7383 28.3059C39.8295 28.526 39.8764 28.7618 39.8764 29C39.8764 29.2382 39.8295 29.474 39.7383 29.6941C39.6471 29.9141 39.5134 30.114 39.3449 30.2823L32.0949 37.5323C31.7548 37.8724 31.2935 38.0635 30.8125 38.0635C30.3315 38.0635 29.8703 37.8724 29.5302 37.5323C29.1901 37.1922 28.999 36.731 28.999 36.25C28.999 35.769 29.1901 35.3078 29.5302 34.9677L33.6876 30.8125H19.9375C19.4568 30.8125 18.9958 30.6215 18.6559 30.2816C18.316 29.9417 18.125 29.4807 18.125 29C18.125 28.5193 18.316 28.0583 18.6559 27.7184C18.9958 27.3785 19.4568 27.1875 19.9375 27.1875H33.6876L29.5302 23.0323C29.1901 22.6922 28.999 22.231 28.999 21.75C28.999 21.269 29.1901 20.8078 29.5302 20.4677C29.8703 20.1276 30.3315 19.9365 30.8125 19.9365C31.2935 19.9365 31.7548 20.1276 32.0949 20.4677L39.3449 27.7177Z" fill="#00363A"/>
+              </svg>
             </button>
           </div>
         </div>
         
-        <div className="image-column">
+        <div className="carousel-image">
           <img 
-            src={carouselData[currentIndex].imageUrl} 
-            alt={carouselData[currentIndex].title} 
+            src={currentItem.imageUrl} 
+            alt={currentItem.title} 
+            loading="lazy"
           />
         </div>
       </div>
+
     </section>
   );
+};
+
+CustomCarousel.propTypes = {
+  interval: PropTypes.number
 };
 
 export default CustomCarousel;

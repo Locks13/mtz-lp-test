@@ -1,4 +1,3 @@
-/* Base styles for two column section */
 .two-column-section {
     display: flex;
     gap: 40px;
@@ -8,13 +7,12 @@
     max-width: 1440px;
   }
   
-  /* Column layout */
+
   .two-column-section .column {
     flex: 1;
-    min-width: 0; /* Prevents overflow issues */
+    min-width: 0;
   }
   
-  /* Text column specific styles */
   .two-column-section .text-column {
     margin: 20px;
   }
@@ -62,17 +60,11 @@
     background-color: #0052a3;
   }
   
-  /* Image column specific styles */
   .two-column-section .image-column img {
     width: 100%;
     height: auto;
   }
-/*  
-  .two-column-section .image-column img:hover {
-    transform: scale(1.02);
-  }
-*/
-  /* Image right variation */
+
   .two-column-section.image-right {
     flex-direction: row;
   }
@@ -81,13 +73,13 @@
   }
 
   .color-background{
-    background-color: var(--dark-gray);
+    background: #58E2E0;
+    background: linear-gradient(222deg,rgba(88, 226, 224, 1) 0%, rgba(87, 199, 133, 1) 26%, rgba(254, 232, 171, 1) 73%);
     border-radius: 30px;
     padding: 65px;
 
   }
   
-  /* Responsive adjustments */
   @media (max-width: 768px) {
     .two-column-section {
       flex-direction: column;
@@ -112,7 +104,6 @@
     }
   }
   
-  /* Small screen adjustments */
   @media (max-width: 480px) {
     .two-column-section {
       gap: 20px;

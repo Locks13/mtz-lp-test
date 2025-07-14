@@ -25,7 +25,6 @@ const renderTextWithBold = (text) => {
 const TwoColumnSection = ({ sectionId, customClass }) => {
   const section = sectionsData.find(item => item.id === sectionId);
 
-  // Validation for section existence
   if (!section) {
     return (
       <div className="section-error">

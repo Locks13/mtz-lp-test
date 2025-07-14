@@ -1,15 +1,30 @@
-{
-    "sectionTitle": "What Our Clients Say",
-    "testimonials": [
-      {
-        "id": 1,
-        "name": "John Smith",
-        "role": "Marketing Director",
-        "company": "ABC Company",
-        "comment": "The service was excellent and exceeded our expectations.",
-        "rating": 5,
-        "imageUrl": "/images/clients/john.jpg"
-      }
-    ],
-    "ctaText": "Leave your testimonial"
+[
+  {
+    "id": 1,
+    "name": "Ana Silva",
+    "text": "Excelente serviço! A equipe foi muito atenciosa e resolveu meu problema rapidamente. Recomendo a todos que precisam de um serviço de qualidade.",
+    "image": "https://randomuser.me/api/portraits/women/32.jpg",
+    "rating": 5
+  },
+  {
+    "id": 2,
+    "name": "Carlos Oliveira",
+    "text": "Profissionais muito competentes. Fiquei impressionado com a qualidade do atendimento e o resultado final do trabalho.",
+    "image": "https://randomuser.me/api/portraits/men/22.jpg",
+    "rating": 4
+  },
+  { 
+    "id": 3,
+    "name": "Mariana Costa",
+    "text": "Não poderia estar mais satisfeita! Superaram minhas expectativas em todos os aspectos. Com certeza contratarei novamente.",
+    "image": "https://randomuser.me/api/portraits/women/44.jpg",
+    "rating": 5
+  },
+  {
+    "id": 4,
+    "name": "Roberto Santos",
+    "text": "Bom atendimento e preço justo. O trabalho foi concluído dentro do prazo combinado e com qualidade.",
+    "image": "https://randomuser.me/api/portraits/men/65.jpg",
+    "rating": 4
   }
+]

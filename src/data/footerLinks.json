@@ -1,0 +1,40 @@
+{
+  "links": [
+    {
+      "id": 1,
+      "texto": "Conheça nossa comunidade",
+      "url": "/",
+      "title": "Conheça nossa comunidade"
+    },
+    {
+      "id": 2,
+      "texto": "Central de ajuda",
+      "url": "/",
+      "title": "Central de ajuda"
+    },
+    {
+      "id": 3,
+      "texto": "Fale com especialista",
+      "url": "/sobre",
+      "title": "Fale com especialista"
+    },
+    {
+      "id": 4,
+      "texto": "Termos de uso",
+      "url": "/",
+      "title": "Termos de uso"
+    },
+    {
+      "id": 5,
+      "texto": "Privacidade",
+      "url": "/",
+      "title": "Privacidade"
+    },
+    {
+      "id": 6,
+      "texto": "Comece pelo grátis",
+      "url": "/",
+      "title": "PComece pelo grátis"
+    }
+  ]
+}

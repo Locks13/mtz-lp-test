@@ -28,7 +28,8 @@ const BannerHero = () => {
               className="chatbot-input"
             />
             <button type="submit" className="chatbot-button btn">
-              Enviar
+              <span className="button-text">Enviar</span>
+              <span className="button-icon">↑</span>
             </button>
           </form>
              

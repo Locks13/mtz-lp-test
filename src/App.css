@@ -7,14 +7,17 @@
 
   --typo-fs-m: 16px;
 
-
   --white: #ffffff;
   --black: #000000;
+
+  --gradient-blue-teal: radial-gradient(50.27% 50.07% at 68.07% 0%, rgba(124, 232, 176, 0.00) 0%, rgba(124, 232, 176, 0.20) 100%), radial-gradient(56.46% 71.32% at 31.42% 93.33%, #7CE8B0 0%, rgba(124, 232, 176, 0.00) 100%), radial-gradient(128.07% 98.64% at 21.3% 23.78%, #198CE8 11.5%, rgba(85, 220, 230, 0.00) 100%), linear-gradient(0deg, #55DCE6 0%, #55DCE6 100%), #FFF;
   
   --dark-teal:#00363A;
   --dark-gray: #5F6E82;
 
   --spacing-7: 32px;
+
+
 
 }
 

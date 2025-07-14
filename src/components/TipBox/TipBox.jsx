@@ -4,7 +4,7 @@ import tipsData from '../../data/tips.json';
 import './TipBox.css';
 
 const TipBox = ({ groupId, customClass }) => {
-  // Find the tip group by ID
+
   const tipGroup = tipsData.find(group => group.id === groupId);
 
   if (!tipGroup) {
